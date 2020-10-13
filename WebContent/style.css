@@ -132,7 +132,7 @@ header {
   color: crimson;
 }
 .opacity-image {
-  background: url(images/section-bg-01.png) no-repeat center center;
+  background: url(project/images/section-bg-01.png) no-repeat center center;
   background-size: cover;
   height: 100%;
   opacity: 0;
@@ -214,7 +214,7 @@ header {
 
 /* ################# Section : about  ################# */
 .about-inner {
-  background: #0dace3 url(images/line-drawing.png) no-repeat right bottom;
+  background: #0dace3 url(project/images/line-drawing.png) no-repeat right bottom;
   height: 100%;
   /*background-color: #0dace3;*/
 }
@@ -544,7 +544,7 @@ hr.bar {
 
 /* ################# Section : location  #################*/
 .location-inner {
-  background: url(images/background-location.jpg) no-repeat center center;
+  background: url(project/images/background-location.jpg) no-repeat center center;
   height: 100%;
   position: relative;
 }
@@ -871,12 +871,12 @@ hr.bar {
 
 /* ############ SubPage : Project ############ */
 .hiring-main.project-main1 {
-  background: url(images/project-main-01-01.jpg) no-repeat center center;
+  background: url(project/images/project-main-01-01.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
 .hiring-main.project-main2 {
-  background: url(images/project-main-02-01.jpg) no-repeat center center;
+  background: url(project/images/project-main-02-01.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
