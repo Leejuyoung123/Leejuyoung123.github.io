@@ -1,395 +1,348 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ko">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<!-- 외부 플러그인 CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
-	<!-- 사용자가 추가한 CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<title>이주영</title>
-	<style>
-	/* 가로 슬라이드 네비 위치 및 색상 
-	* --------------------------------------- */
-	.fp-slidesNav.bottom{bottom: 125px; text-align:center;}
-	#fp-nav span, .fp-slidesNav span{background: white!important;}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lee Ju Young Portpolio!</title>
+  <link rel="icon" href="project/images/favicon.png">
+  <script src="project/js/jquery-2.1.4.js"></script>
+  <!-- Page Scroll Effects JS & CSS -->
+  <script src="project/js/velocity/modernizr.js"></script>
+  <script src="project/js/velocity/velocity.min.js"></script>
+  <script src="project/js/velocity/velocity.ui.min.js"></script>
+  <script src="project/js/velocity/main.js"></script>
+  <link rel="stylesheet" href="project/js/velocity/velocity.css">
+  <!-- Smooth Scrolling -->
+  <script src="project/js/jquery.scrollTo.min.js"></script>
+  <!-- Slick.js -->
+  <script src="project/js/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="project/js/slick/slick-theme.css">
+  <link rel="stylesheet" href="project/js/slick/slick.css">
+  <!-- Featherlight.js -->
+  <script src="js/featherlight/featherlight.js"></script>
+  <link rel="stylesheet" href="project/js/featherlight/featherlight.css">
+  <!-- Custom JS & CSS -->
+  <script src="custom.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
-<body>
-<!-- Menu -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-	<a class="navbar-brand" href="/" >포트폴리오</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>	
-	<div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item menu_header active">
-				<a class="nav-link" href="#header">Home</a>
-			</li>
-			<li class="nav-item menu_section1">
-				<a class="nav-link" href="#section1">보유기술</a>
-			</li>
-			<li class="nav-item menu_section2">
-				<a class="nav-link" href="#section2">관심분야</a>
-			</li>
-			<li class="nav-item menu_footer">
-				<a class="nav-link" href="#footer">자격증 및 수상내역</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">클라우드프로젝트</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li><a href="https://github.com/Leejuyoung123/Leejy" target="blank">Git소스바로가기(형상관리)</a></li>
-					<li class="dropdown">
-					<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">헤로쿠클라우드</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li class="dropdown">
-						<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">포트폴리오</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a href="https://leejy.herokuapp.com/" target="blank">스프링 웹프로젝트</a></li>
-						<li><a href="https://leejy.herokuapp.com/" target="blank">원페이지 웹프로젝트</a></li>
-						<li><a href="https://leejy.herokuapp.com/sample/slide" target="blank">슬라이드 웹프로젝트</a></li>
-						</ul>
-					</li>
-					</ul>
-					</li>
-					</ul>
-			</li>
-			<li class="nav-item">
-					<div id="google_translate_element"></div>
-					<script type="text/javascript">
-					function googleTranslateElementInit() {
-						new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,vi,zh-CN,zh-TW,de,es,fr,la,pt,ru,th', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-					}
-					</script>
-					<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-					<style>
-						.goog-te-gadget {font-family:helvetica,meiryo,gulim,AppleGothic,sans-serif;}
-						.goog-te-menu2 {margin-top:5px; border:1px solid #dcdcdc !important;}
-						.goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div {color:#000 !important;}
-					</style>
-			</li>
-		</ul>
-	</div>	
-</nav>
-<div class="language"><!-- active 클래스명 -->
-	<div class="language-current">
-			<span class="flag flag-ko-KR"></span>
-			<span class="language-name">Korean</span>
-	</div>
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="language-triangle">
-		<polygon points="0,0 8,0 4, 6">
-	</polygon></svg>
-	<div class="submenu languages">
-			<ul>
-				<li><a href="#/en/"><span class="flag flag-en-US"></span><span class="language-name">English</span></a></li>
-				<li><a href="#/zh/"><span class="flag flag-zh-CN"></span><span class="language-name">Chinese</span></a></li>
-				<li><a href="#/ja/"><span class="flag flag-ja-JP"></span><span class="language-name">Japanese</span></a></li>
-				<li><a href="#/vi/"><span class="flag flag-vi-VN"></span><span class="language-name">Vietnamese</span></a></li>
-			</ul>
-	</div>
-</div>
-<!-- 1페이지 스크롤 영역 Start -->
-<div id="fullpage">
-	<!-- 헤더 -->
-	<div class="header section" data-anchor="header">
-		<div class="container">
-			<div class="slide active">
-				<div class="row">
-					<div class="d-none d-md-block col-md-5 col-sm-5">
-						<img src="images/symu-panel-1.PNG" class="cover-image float-right">
-					</div>
-					<div class="col-md-7 col-sm-7">
-						<h3><span class="highlight">스프링 웹프로젝트 - 헤로쿠용</span></h3>
-						<p>작업자: 이주영 &nbsp;&nbsp; &nbsp;&nbsp; 등록일:2020.07.27</p>          
-						<p>《사용기술》 스프링프레임웍, Hsql(Mysql호환), RestAPI </p>
-						<p>Git저장소소스: https://github.com/Leejuyoung123/Leejy</p>
-						<p>▶ 결과물 바로가기: <a href="https://leejy.herokuapp.com/" target="blank">http://leejy.herokuapp.com/</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="row">
-					<div class="d-none d-md-block col-md-5 col-sm-5">
-						<img src="images/symu-panel-3.PNG" class="cover-image float-right">
-					</div>
-					<div class="col-md-7 col-sm-7">
-						<h3><span class="highlight">반응형 웹프로젝트 - 오픈소스</span></h3>
-						<p>작업자: 이주영 &nbsp;&nbsp; &nbsp;&nbsp; 등록일:2020.06.27</p>          
-						<p>《사용기술》 부트스트랩, JQuery(자바스크립트) </p>
-						<p>Git저장소소스: https://github.com/Leejuyoung123/Leejy</p>
-						<p>▶ 결과물 바로가기: <a href="https://leejy.herokuapp.com/" target="blank">http://leejy.herokuapp.com/sample</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="row">
-					<div class="d-none d-md-block col-md-5 col-sm-5">
-						<img src="images/symu-panel-2.PNG" class="cover-image float-right">
-					</div>
-					<div class="col-md-7 col-sm-7">
-						<h3><span class="highlight">슬라이드 웹프로젝트 - 오픈소스</span></h3>
-						<p>작업자: 이주영 &nbsp;&nbsp; &nbsp;&nbsp; 등록일:2020.05.27</p>          
-						<p>《사용기술》 부트스트랩, JQuery(자바스크립트) </p>
-						<p>Git저장소소스: https://github.com/Leejuyoung123/Leejy</p>
-						<p>▶ 결과물 바로가기: <a href="https://leejy.herokuapp.com/sample/slide" target="blank">http://leejy.herokuapp.com/sample/slide</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="row">
-					<div class="d-none d-md-block col-md-5 col-sm-5">
-						<img src="images/symu-panel-1.PNG" class="cover-image float-right">
-					</div>
-					<div class="col-md-7 col-sm-7">
-						<h3><span class="highlight">전자정부프로젝트- 파스타용 </span></h3>
-						<p>작업자: 이주영 &nbsp;&nbsp; &nbsp;&nbsp; 등록일:2020.06.27</p>          
-						<p>《사용기술》tiles 템플릿, 전자정부 프로젝트 (관리자 관리 기능 추가) </p>
-						<p>Git저장소소스: https://github.com/Leejuyoung123/Leejy_egov</p>
-						<p>▶ 결과물 바로가기: <a href="http://leejy2egov.paas-ta.org/tiles/main.do" target="blank">http://leejy2-egov.paas-ta.org/tiles/main.do</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="row">
-					<div class="d-none d-md-block col-md-5 col-sm-5">
-						<img src="images/symu-panel-1.PNG" class="cover-image float-right">
-					</div>
-					<div class="col-md-7 col-sm-7">
-						<h3><span class="highlight">스프링 웹프로젝트-파스타용</span></h3>
-						<p>작업자: 이주영 &nbsp;&nbsp; &nbsp;&nbsp; 등록일:2020.06.27</p>          
-						<p>《사용기술》부트스트랩, JQuery(자바스크립트) </p>
-						<p>Git저장소소스: https://github.com/Leejuyoung123/Leejy
-							   클라우드 파스타: http://leejy-mysql.paas-ta.org/>
-						</p>
-						<p>▶ 결과물 바로가기: <a href="http://leejy-mysql.paas-ta.org/" target="blank">http://leejy-mysql.paas-ta.org/</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
-	<!-- 1 번 섹션 보유기술 -->
-	<div class="section" data-anchor="section1">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
-				  <h2 class="mb-5">Skills</h2>
-		          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-		          <ul class="list-inline list-icons">
-		            <li class="list-inline-item">
-		              <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		              <i class="devicon-java-plain-wordmark"></i>
-		            </li>
-		            <li class="list-inline-item">
-		             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		            <i class="devicon-python-plain-wordmark"></i>
-		            </li>
-		            <li class="list-inline-item">
-		             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		             <i class="devicon-html5-plain-wordmark"></i>
-		            </li>
-		            <li class="list-inline-item">
-		              <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		              <i class="devicon-android-plain-wordmark"></i>
-		            </li>
-		            <li class="list-inline-item">
-		            <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		            <i class="devicon-django-line-wordmark"></i>
-		            </li>
-		            <li class="list-inline-item">
-		             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		            <i class="devicon-linux-plain"></i>
-		            </li>
-		            <li class="list-inline-item">
-		              <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		              <i class="devicon-mysql-plain-wordmark"></i>
-		            </li>
-		            <li class="list-inline-item">
-		             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		              <i class="devicon-php-plain"></i>
-		            </li>
-		            <li class="list-inline-item">
-		             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		            <i class="devicon-visualstudio-plain"></i>
-		            </li>
-		            <li class="list-inline-item">
-		              <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		              <i class="devicon-github-plain"></i>
-		            </li>
-		            <li class="list-inline-item">
-		            <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		            <i class="devicon-apache-plain-wordmark"></i>
-		            </li>
-		          </ul>
-          		<div class="subheading mb-3">Interests and positions</div>
-		          <ul class="fa-ul mb-0">
-		            <li>
-		              <i class="fa-li fa fa-check"></i>
-		                Java - </li>
-		            <li>
-		              <i class="fa-li fa fa-check"></i>
-		                html5 -</li>
-		              <i class="fa-li fa fa-check"></i>
-		              	CSS -<br>&amp; Server construction
-		              <li>
-		              <i class="fa-li fa fa-check"></i>
-		                JSP -</li>
-		                <li>
-		              <i class="fa-li fa fa-check"></i>
-		                Spring</li>
-		              <i class="fa-li fa fa-check"></i>
-		              	JavaScript 
-		            <li>
-		              <i class="fa-li fa fa-check"></i>
-		               Oracle / Mysql </li>
-		          </ul>
-				</div>
-				<div class="col-md-7">
-					<img src="images/symu-panel-1.PNG">
-				</div>
-			</div>
-		</div>
-	</div>
+<body data-hijacking="on" data-animation="rotate">
 
-	<!-- 2번 섹션. 관심분야 흰 배경 -->
-	<div class="section" data-anchor="section2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<img src="images/symu-panel-2.PNG">
-				</div>
-				<div class="col-md-5">
-					<h2 class="mb-5">INTERESTS</h2>
-					<p>
-						<a href="https://docs.google.com/presentation/d/1MSp3mXAoAtcwUX9ZE6KtxuKmcJ8ISrXAGWz-_1dWfSg/edit?usp=sharing">
-						 	 PreSenTation Project architecture
-						</a>
-					</p>
-					<p>
-						<a href="https://docs.google.com/spreadsheets/d/1zniflgL2G2Ndt4nDxtn_krfRbWKGqnd5XPtkimhk0S4/edit?usp=sharing">
+  <div class="container">
+    <section class="cd-section visible" id="home">
+      <div>
+        <div class="content">
+          <div class="home-inner">
+            <h3 class="welcome-text">You can do it <span>with !!<i class="fa fa-heart"></i></span></h3>
+            <div class="opacity-image"></div>
+            <div class="home-heading">
+              <span>Lee Jy Project</span>
+              <span>Spring Web Project</span>
+              <span>My PortPolio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="cd-section" id="about">
+      <div>
+        <div class="content">
+          <div class="about-inner">
+            <div class="about-items">
+              <div class="item">
+               <h2>Front-end skill</h2>
+                <img src="images/careers-main-01.png">
+                <span>
+                  <h3>HTML5</h3>
+                  <p>
+                     html 기본 구조와 레이아웃 (초급)
+                  </p>
+                </span>
+              </div>
+              <div class="item">
+                <img src="images/careers-main-02.png">
+                <span>
+                  <h3>CSS</h3>
+                  <p>
+                     css 속성, 기능 , 애니메이션기능 (초급)
+                  </p>
+                </span>
+              </div>
+              <div class="item">
+                <img src="images/careers-main-03.jpg">
+                <span>
+                  <h3>Jquery</h3>
+                  <p>
+                     제이쿼리 라이브러리 기능 (초급)
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cd-section" id="project">
+      <div>
+        <div class="content">
+          <div class="project-inner">
+            <input type="radio" name="tabmenu" id="tab1" checked>
+            <input type="radio" name="tabmenu" id="tab2">
+            <input type="radio" name="tabmenu" id="tab3">
+            <div class="tabs">
+              <div class="tab">
+                <div class="project-info" data-text="01">
+                  <h3>Project : Spring (Hsql)Mysql
+                      <a href="https://leejy.herokuapp.com/" target="blank">
+                       HeroKu Click</a>
+                  </h3>
+                  <ul>
+                    <li><b>Skill</b> : 
+                    <br>
+                    스프링 웹프로젝트 -
+                    <br> 
+                    (헤로쿠용),Hsql(Mysql호환), RestAPI 
+                    <br>
+                    반응형 웹프로젝트 - 
+                    <br>
+                    오픈소스,부트스트랩, JQuery, JS
+                    </li>
+                    <li><b>Completed Date</b> :2020.07-2020.09</li>
+                    <li><b>Architect</b> : Lee Ju Young</li>
+                  </ul>
+                 
+                  <a class="view-project" href="https://github.com/Leejuyoung123/Leejy" target="blank">View Project GitHub<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                <div class="project-photo">
+                  <img src="images/project-main-01-01.png">
+                  <img src="images/project-main-01-02.png">
+                  <img src="images/project-main-01-03.png">
+                  <img src="images/project-main-01-04.png">
+                </div>
+              </div>
+              <div class="tab">
+                 <div class="project-info" data-text="02">
+                  <h3>Project : EgovFrameWork
+                      <a href="http://leejy2-egov.paas-ta.org/tiles/main.do;jsessionid=3028FACBB2D373E6D0D01F22DF8D1275" target="blank">
+                      전자정부-Paas-ta Click</a>
+                  </h3>
+                  <ul>
+                    <li><b>Skill</b> : 
+                    <br>
+                    전자정부 프레임워크 프로젝트 :
+                    <br> 
+                    tiles 템플릿,
+                    사용자단 관리자단 분리
+                    </li>
+                    <li><b>Completed Date</b> :2020.09-2020.10</li>
+                    <li><b>Architect</b> : Lee Ju Young</li>
+                  </ul>
+                 
+                  <a class="view-project" href="https://github.com/Leejuyoung123/Leejy2-egov" target="blank">View Project GitHub<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                <div class="project-photo">
+                  <img src="images/project-main-02-01.png">
+                  <img src="images/project-main-02-02.png">
+                  <img src="images/project-main-02-03.png">
+                  <img src="images/project-main-02-04.png">
+                </div>
+              </div>
+              <div class="tab">
+                <div class="project-info" data-text="03">
+                  <h3>Project : Spring (Hsql)Mysql
+                      <a href="http://leejymysql.paas-ta.org/" target="blank">
+                       Paas-ta Click</a>
+                  </h3>
+                  <p>
+                    
+                  </p>
+                  <ul>
+                    <li><b>Skill</b> : 
+                    <br>
+                    스프링 웹프로젝트 -
+                    <br> 
+                    (파스타용),Hsql(Mysql호환), RestAPI 
+                    <br>
+                    반응형 웹프로젝트 - 
+                    <br>
+                    오픈소스,부트스트랩, JQuery, JS
+                    </li>
+                    <li><b>Completed Date</b> :2020.07-2020.09</li>
+                    <li><b>Architect</b> : Lee Ju Young</li>
+                  </ul>
+                 
+                  <a class="view-project" href="https://github.com/Leejuyoung123/Leejy" target="blank">View Project GitHub<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                <div class="project-photo">
+                  <img src="images/project-main-01-01.png">
+                  <img src="images/project-main-01-02.png">
+                  <img src="images/project-main-01-03.png">
+                  <img src="images/project-main-01-04.png">
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <label for="tab1"></label>
+              <label for="tab2"></label>
+              <label for="tab3"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cd-section" id="location">
+      <div>
+        <div class="content">
+          <div class="location-inner">
+            <div class="feature">
+              <div class="office">
+                <div class="headquaters">
+                  <b>Back-End(Skill)</b>
+                  <h2>Spring Project</h2>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="service-item">
+                  <i class="fa fa-leaf"></i>
+                  <h3>전자정부 표준 프레임워크</h3> 
+                  <p>
+                     기존 전자정부 프레임워크 타일즈 템플릿으로
+                     사용자단 및 관리자단 분리처리 
+                  </p>
+                </div>
+                 <div class="service-item">
+                  <i class="fa fa-leaf"></i>
+                  <h3>Spring Frame work 기반</h3> 
+                  <p>
+                     Model2 방식으로 스프링 웹 게시판형 
+                     웹프로젝트 구현
+                  </p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service-item">
+                  <i class="fa fa-leaf"></i>
+                  <h3>Java Script</h3>
+                  <p>
+                    es5 이상 사용가능
+                  </p>
+                </div>
+                <div class="service-item">
+                  <i class="fa fa-bullseye"></i>
+                  <h3>Java</h3>
+                  <p>
+                     Array List LinkedList
+                     자료 구조 알고리즘 (초급)
+                  </p>
+                </div>
+                <div class="service-item">
+                  <i class="fa fa-cube"></i>
+                  <h3>Spring</h3>
+                  <p>
+                    @어노테이션 , AOP , OOP
+                    객체 지향 프로그래밍 이해 (초급)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cd-section" id="contact">
+      <div>
+        <div class="content">
+          <div class="contact-inner">
+            <div class="contact-feature">
+              <div class="contact-form">
+                <h3><b>Contact</b> Us</h3>
+                <p>  
+                    사용자 정보
+                </p>
+                <form class="send-box">
+                  <label >Name<span>*</span></label>
+                  <input type="email" value="이주영">
+                  <label>Phone<span>*</span></label>
+                  <input type="text" value="010-7494-2130">
+                  <label>Message <span>*</span></label>
+                  <textarea cols="30" rows="10"></textarea>
+                  <button>send message</button>
+                </form>
+              </div>
+              <div class="contact-info">
+                <h4>Our</h4>
+                <ul>
+                  <li>Address :충청남도,천안시,동남구</li>
+                  <li>Phone :010-7494-2130</li>
+                  <li>Email :skyrl@naver.com</li>
+                </ul>
+                <h4><b>Hours</b></h4>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Monday - Friday : 9am to 6pm</li>
+                </ul>
+                <h4>PPT & Excel <b>Click</b></h4>
+                <p>
+                구글 문서 :
+                <a href="https://docs.google.com/presentation/d/1MSp3mXAoAtcwUX9ZE6KtxuKmcJ8ISrXAGWz-_1dWfSg/edit?usp=sharing"
+                target="_blank">
+                PreSenTation Project architecture
+                </a>
+                </p>
+                <p>
+                스프레드시트 : (Excel)
+                <a href="https://docs.google.com/spreadsheets/d/1zniflgL2G2Ndt4nDxtn_krfRbWKGqnd5XPtkimhk0S4/edit?usp=sharing"
+                target="_blank">
 							 SpreadSheet Project architecture
-						</a>
-					</p>					
-				</div>
-			</div>
-		</div>
-	</div>
+                </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <header>
+      <div class="gnb-inner">
+        <div class="logo">
+          <a href="#none"><img src="images/logo.png"></a>
+        </div>
+        <div class="gnb">
+          <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="slogan">We design places, not projects.</div>
+        </div>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+  </div>
+  
+  <a href="#" class="gototop"><img src="images/gototop.png"></a>
+  <a href="hiring.html" class="btn-hiring" data-featherlight="iframe"><i class="fa fa-commenting"></i> Hiring</a>
 
-	<!-- 자격증 / 수상내역 푸터 -->
-	<footer class="footer section" data-anchor="footer">
-		<div class="container">
-			<div class="row">
-			  <h2 class="col-md-7">Certifications &amp; Works</h2>
-	          <ul class="fa-ul col-md-5 text-left">
-	            <li>
-	              <i class="fa-li fa fa-trophy text-warning"></i>
-	              <strong></strong>   2020년 08월 19일</li>
-	            <li>
-	              <i class="fa-li fa fa-trophy text-warning"></i>
-	              <strong>자격증 추가</strong>   2020년 08월 19일</li>
-	            <li>
-	              <i class="fa-li fa fa-trophy text-warning"></i>
-	              <strong>자격증 추가</strong>   2020년 08월 19일</li>
-	          </ul>
-			</div>
-		</div>
-	</footer>
-</div>
-<!-- 1페이지 스크롤 영역 Start -->
-
-<!-- 아래페이지 이동 버튼 -->
-<button id="moveDown" class="btn btn-outline-primary"><i class="arrow down"></i></button>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- 외부 플러그인 js  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-<!-- 사용자 지정 js Start -->
-<script>
-	$(function($){ //서브메뉴 클릭유지 스크립트
-		$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-		if (!$(this).next().hasClass('show')) {
-			$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-		}
-		var $subMenu = $(this).next(".dropdown-menu");
-		$subMenu.toggleClass('show');
-
-		$(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-			$('.dropdown-submenu .show').removeClass("show");
-		});
-
-		return false;
-		});
-	})
-</script>
-<script>
-$("#fullpage").fullpage({    //기존
-		anchors: ['header', 'section1', 'section2', 'footer'],
-		navigationTooltips: ['header', 'section1', 'section2', 'footer'],
-		sectionsColor: ['#0798ec','#7baabe','#4bbfc3','#0d121b'],
-		navigation: true,
-		//loopBottom: true,
-		responsiveWidth: 767, //반응형 가로크기 기준
-		afterResponsive: function(isResponsive){ //반응형 일때 사용할 액션
-			if(isResponsive) {//기존클래스는 d-none d-md-block -> d-none-kim19 으로 변경.
-				$(".d-none-kim19").addClass('d-none');
-				$("#moveDown").addClass('d-none');
-			}else{
-				$(".d-none-kim19").removeClass('d-none');
-				$("#moveDown").removeClass('d-none');
-			}
-		},
-		afterLoad: function(section_name, section_num){ // 마지막 페이지 도착 확인, onLeave: //페이지 이동 후 확인
-			$('.nav-item').removeClass("active");
-			$('.menu_' + section_name).addClass("active");
-				//alert(section_name);alert(section_num);//디버그
-				if(section_name=="footer"){
-					$("#moveDown").addClass('d-none');
-				}else{
-					$("#moveDown").removeClass('d-none');
-				}
-		},
-		slidesNavigation: true,
-		afterRender: function () {
-            setInterval(function () {
-                $.fn.fullpage.moveSlideRight();
-            }, 4000);
-        },
-}); //기존
-/* 아래페이지 이동 버튼 */
- $(function(){ //3.x 버전은 더이상 오픈소스가 아니라서, 2.x로 변경
-    $('#moveDown').click(function (event) {
-        event.preventDefault();
-        $.fn.fullpage.moveSectionDown();
-    });
-});
-/* 상단메뉴 선택 버튼 */
-$('.nav-item').click(function (event) {
-	$('.nav-item').removeClass("active");
-	$(this).addClass("active");	
-});
-/* 언어선택 버튼 */
-$('.language').click(function (event) {
-	event.preventDefault();
-	$(this).toggleClass("active");
-});
-$("body").click(function(e){
-	if(e.target.className == "language-current" || ((e.target.className).indexOf("flag") != -1) || e.target.className == "language-name") { 
-				//alert("don't hide");  
-		}
-		else {
-			$('.language').removeClass('active');
-		}
-});
-</script>
-<!-- 사용자 지정 js End -->
+  <nav>
+    <ul class="cd-vertical-nav">
+      <li><a href="#0" class="cd-prev inactive">Next</a></li>
+      <li><a href="#0" class="cd-next">Prev</a></li>
+    </ul>
+  </nav>
+  
 </body>
+
 </html>
