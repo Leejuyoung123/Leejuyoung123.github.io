@@ -57,9 +57,11 @@ header {
 }
 .logo {
   float: left;
+ 
 }
 .logo img {
   padding-top: 17px;
+  width:50px;
 }
 .gnb {
   float: right;
@@ -115,25 +117,25 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   font-size: 50px;
   font-weight: 300;
   text-align: center;
   line-height: 1.2em;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:'Source Sans Pro',sans-serif;
   animation: slideup 2s linear; 
   animation-fill-mode: both;
 }
 .welcome-text span {
-  display: block;
-  font-size: 26px;
+  display:block;
+  font-size:26px;
 }
 .welcome-text span .fa {
-  color: crimson;
+  color:red;
 }
 .opacity-image {
-  background: url(project/images/section-bg-01.png) no-repeat center center;
+  background: url(/project/images/section-bg-01.PNG) no-repeat center center;
   background-size: cover;
   height: 100%;
   opacity: 0;
@@ -347,19 +349,26 @@ input[id=tab3]:checked ~ .tabs {
 .project-info h3 {
   font-size: 20px;
   position: relative;
+  color:black;
 }
 .project-info p {
   font-size: 16px;
   line-height: 1.5em;
+  color:black;
+  margin:0;
 }
 .project-info ul {
   line-height: 2em;
   margin: 30px 0;
 }
+.project-info ul li b{
+	color:black;
+}
 .project-info ul li:before {
   content:"\f105";
   font-family: fontawesome;
   margin-right: 10px;
+  color:black;
 }
 .detail {
   margin-bottom: 50px;
@@ -630,6 +639,7 @@ hr.bar {
   font-size: 30px;
   font-weight: normal;
   margin: 0;
+  color:black;
 }
 .send-box {}
 .send-box label {
